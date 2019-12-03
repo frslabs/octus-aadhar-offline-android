@@ -1,7 +1,9 @@
 # OCTUS Aadhar offline ANDROID SDK
 ![version](https://img.shields.io/badge/version-v0.1.0-blue)
 
-The Octus aadhar offlines SDK comes with a two screens one is for enter aadhar number and captcha and second one is for verifying otp.
+This SDK provides an in-App experience to the user without redirecting the user to the UIDAI website. However, if you prefer redirecting the user or allow the user to upload a previously downloaded Aadhaar Offline file, please use the redirect flow in the SDK.
+Aadhaar Paperless Offline e-KYC is a secure and shareable document which can be used by any Aadhaar holder for offline verification of identification. The pre-built screens as part of the SDK allows the Aadhaar holder enter the Aadhaar Number of VID, Captcha, OTP and a four-digit share code. Once the data is validated by UIDAI, a ZIP file (password protected using the share code) will be downloaded into the resident’s device.
+
 # Table Of Content
 
 - [Prerequisite](#prerequisite)
