@@ -225,7 +225,7 @@ The result is obtained through the `OctusAadharOfflineResult` object
 </div>
 ## OctusAadharOffline Error Codes
 
-Following error codes will be returned on the `onVidusFailure` method of the callback
+Following error codes will be returned on the `onOctusOfflineFailure` method of the callback
 
 | CODE | DESCRIPTION                  |
 | ---- | ---------------------------- |
