@@ -40,7 +40,7 @@ allprojects {
     repositories { 
 
         maven { 
-            // URL for Vidus SDK. 
+            // URL for Octus aadhar offline SDK. 
             url "https://octus-aadhar-offline-android.repo.frslabs.space/"                  
             credentials { 
                 username '<YOUR_USERNAME>' 
