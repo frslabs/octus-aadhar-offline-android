@@ -96,6 +96,7 @@ dependencies {
     
     // OPTIONAL - Required if transaction based billing is enabled
     // Octus Aadhar Offline billing dependencies
+
     implementation 'com.frslabs.android.sdk:torus:0.1.0'
     implementation 'com.google.code.gson:gson:2.8.5'
    
