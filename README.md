@@ -1,9 +1,9 @@
-# OCTUS Aadhar offline ANDROID SDK
+# Octus Aadhaar Offline SDK 
 ![version](https://img.shields.io/badge/version-v0.1.0-blue)
 
-This SDK provides an in-App experience to the user without redirecting the user to the UIDAI website. However, if you prefer redirecting the user or allow the user to upload a previously downloaded Aadhaar Offline file, please use the redirect flow in the SDK.
-
 Aadhaar Paperless Offline e-KYC is a secure and shareable document which can be used by any Aadhaar holder for offline verification of identification. The pre-built screens as part of the SDK allows the Aadhaar holder enter the Aadhaar Number of VID, Captcha, OTP and a four-digit share code. Once the data is validated by UIDAI, a ZIP file (password protected using the share code) will be downloaded into the resident’s device.
+
+This SDK provides an in-App experience to the user without redirecting the user to the UIDAI website. However, if you prefer redirecting the user or allow the user to upload a previously downloaded Aadhaar Offline file, please use the redirect flow in the SDK.
 
 # Table Of Content
 
@@ -22,11 +22,11 @@ Aadhaar Paperless Offline e-KYC is a secure and shareable document which can be 
 
 ***NOTE : Encryption of OCTUS AADHAR OFFLINE SDK Result is under development***
 
-You will need a valid license to use the Octus aadhar offline SDK, which can be obtained by contacting `support@frslabs.com` . 
+You will need a valid license to use the Octus Aadhaar Offline SDK, which can be obtained by contacting `support@frslabs.com` . 
 
 Depending on the license - offline or online - you have opted for, the ping functionality to billing servers will be disabled or enabled. For instance, if you have opted for the offline SDK model, then there will be no server ping needed to our billing server to bill you. However, if you have chosen a transaction based pricing, then after each transaction, a ping request will be made to our billing server. This cannot be overrided by the App. A point to note is that if the ping transaction fails for any reason, the whole transaction will be void without any results from the SDK.
 
-Once you have the license , follow the below instructions for a successful integration of Octus aadhar offline SDK onto your Android Application.
+Once you have the license , follow the below instructions for a successful integration of Octus Aadhaar Offline SDK onto your Android Application.
 
 ## Android SDK Requirements
 
@@ -43,7 +43,7 @@ allprojects {
     repositories { 
 
         maven { 
-            // URL for Octus aadhar offline SDK. 
+            // URL for Octus Aadhaar Offline SDK. 
             url "https://octus-aadhar-offline-android.repo.frslabs.space/"                  
             credentials { 
                 username '<YOUR_USERNAME>' 
@@ -89,7 +89,7 @@ And then, add the dependencies
 // ...
 
 dependencies {
-    /* Dependencies for Octus aadhar offline SDK */ 
+    /* Dependencies for Octus Aadhaar Offline SDK */ 
     implementation 'com.android.support:design:<version above 23.4.0>'      
     implementation 'com.android.support.constraint:constraint-layout:<version above 1.1.3>'
    
@@ -108,7 +108,7 @@ dependencies {
 
 #### Permissions
 
-OctusAadharOffline requires the following permission to operate properly
+Octus Aadhaar Offline SDK requires the following permission to operate properly
 
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="your.package.name" >
@@ -125,9 +125,9 @@ OctusAadharOffline requires the following permission to operate properly
 ```
 ## Quick Start
 
-#### Initiating the Octus aadhar offline Sdk
+#### Initiating the Octus Aadhaar Offline SDK
 
-Initialize the `Octus aadhar offline` instance with the appropriate configurations to invoke the Octus aadhar offline Sdk
+Initialize the `Octus Aadhaar Offline SDK` instance with the appropriate configurations to invoke the Octus Aadhaar Offline SDK
 
 
 ```java
@@ -234,8 +234,8 @@ Following error codes will be returned on the `onOctusOfflineFailure` method of 
 | ---- | ---------------------------- |
 | 803  | Permission denied             |
 | 804  | SDK was interrupted       |
-| 805  | OctusAadharOffline SDK License expired            |
-| 806  | OctusAadharOffline SDK License was invalid |
+| 805  | Octus Aadhaar Offline SDK License expired            |
+| 806  | Octus Aadhaar Offline SDK License was invalid |
 | 807  | Invalid Config         |
 | 808  | Transaction Failed       |
 | 809  | No Internet Available             |
