@@ -1,9 +1,7 @@
 # Octus Aadhaar Offline SDK 
 ![version](https://img.shields.io/badge/version-v0.1.0-blue)
 
-Aadhaar Paperless Offline e-KYC is a secure and shareable document which can be used by any Aadhaar holder for offline verification of identification. The pre-built screens as part of the SDK allows the Aadhaar holder enter the Aadhaar Number of VID, Captcha, OTP and a four-digit share code. Once the data is validated by UIDAI, a ZIP file (password protected using the share code) will be downloaded into the resident’s device.
-
-This SDK provides an in-App experience to the user without redirecting the user to the UIDAI website. However, if you prefer redirecting the user or allow the user to upload a previously downloaded Aadhaar Offline file, please use the redirect flow in the SDK.
+Aadhaar Paperless Offline e-KYC is a secure and shareable document which can be used by any Aadhaar holder for offline verification of identification. The pre-built screens as part of the SDK allows the Aadhaar holder to enter the Aadhaar Number or VID, Captcha, OTP and a four-digit share code. Once the data is validated by UIDAI, a ZIP file (password protected using the share code) will be downloaded into the resident’s device. This file is then parsed and the signature verified and provided to the App that is integrating the SDK as a JSON file. Optionally the resident’s registered mobile can also be verified in the Aadhaar Offline file.
 
 # Table Of Content
 
