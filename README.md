@@ -1,7 +1,8 @@
-# OCTUS Aadhar offline ANDROID SDK
+# OCTUS Aadhar Offline ANDROID SDK
 ![version](https://img.shields.io/badge/version-v0.1.0-blue)
 
-The Octus aadhar offlines SDK comes with a two screens one is for enter aadhar number and captcha and second one is for verifying otp.
+Aadhaar Offline eKYC is a secure and shareable document which can be used by any Aadhaar holder for offline verification of identification. The pre-built screens as part of the SDK allows the Aadhaar holder enter the Aadhaar Number of VID, Captcha, OTP and a four-digit share code. Once the data is validated by UIDAI, a ZIP file (password protected using the share code) will be downloaded into the resident’s device.
+
 # Table Of Content
 
 - [Prerequisite](#prerequisite)
@@ -19,7 +20,7 @@ The Octus aadhar offlines SDK comes with a two screens one is for enter aadhar n
 
 ***NOTE : Encryption of OCTUS AADHAR OFFLINE SDK Result is under development***
 
-You will need a valid license to use the Octus aadhar offline SDK, which can be obtained by contacting `support@frslabs.com` . 
+You will need a valid license to use the Octus Aadhar Offline SDK, which can be obtained by contacting `support@frslabs.com` . 
 
 Depending on the license - offline or online - you have opted for, the ping functionality to billing servers will be disabled or enabled. For instance, if you have opted for the offline SDK model, then there will be no server ping needed to our billing server to bill you. However, if you have chosen a transaction based pricing, then after each transaction, a ping request will be made to our billing server. This cannot be overrided by the App. A point to note is that if the ping transaction fails for any reason, the whole transaction will be void without any results from the SDK.
 
@@ -86,15 +87,15 @@ And then, add the dependencies
 // ...
 
 dependencies {
-    /* Dependencies for Octus aadhar offline SDK */ 
+    /* Dependencies for Octus Aadhar Offline SDK */ 
     implementation 'com.android.support:design:<version above 23.4.0>'      
     implementation 'com.android.support.constraint:constraint-layout:<version above 1.1.3>'
    
-    // octus aadhar offline Core Dependency
+    // Octus Aadhar Offline Core Dependency
     implementation 'com.frslabs.android.sdk:octus_aadahr_offline:0.1.0'
     
     // OPTIONAL - Required if transaction based billing is enabled
-    // octus aadhar offline billing dependencies
+    // Octus Aadhar Offline billing dependencies
     implementation 'com.frslabs.android.sdk:torus:0.1.0'
     implementation 'com.google.code.gson:gson:2.8.5'
    
@@ -124,7 +125,7 @@ OctusAadharOffline requires the following permission to operate properly
 
 #### Initiating the Octus aadhar offline Sdk
 
-Initialize the `Octus aadhar offline` instance with the appropriate configurations to invoke the Octus aadhar offline Sdk
+Initialize the `Octus Aadhar Offline` instance with the appropriate configurations to invoke the Octus Aadhar Offline SDK
 
 
 ```java
