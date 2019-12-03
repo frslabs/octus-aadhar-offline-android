@@ -105,7 +105,7 @@ dependencies {
 
 #### Permissions
 
-Vidus requires the following permission to operate properly
+OctusAadharOffline requires the following permission to operate properly
 
 ```xml
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="your.package.name" >
@@ -209,7 +209,7 @@ Your activity must implement `OctusAadharOfflineResultCallback` to receive the r
 ## OctusAadharOfflineResult Result
 The result is obtained through the `OctusAadharOfflineResult` object 
 
-##### VidusResult
+##### OctusAadharOfflineResult
 
 <div>
 <table style="width:100%">
