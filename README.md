@@ -164,8 +164,8 @@ public class MainActivity extends AppCompatActivity {
                         , OCTUS_AADHAR_OFFLINE_API_CRED2))
                 .build();
 
-        OctusAadhaarOffline captus = new OctusAadhaarOffline(octusAadhaarOfflineConfig);
-        captus.start(this, new OctusAadharOfflineResultCallback() {
+        OctusAadhaarOffline octusAadharOffline = new OctusAadhaarOffline(octusAadhaarOfflineConfig);
+        octusAadharOffline.start(this, new OctusAadharOfflineResultCallback() {
             @Override
             public void onOctusOfflineSuccess(OctusAadharOfflineResult octusAadharOfflineResult) {
                 /* Handle the OctusAadharOffline Sdk result here */
