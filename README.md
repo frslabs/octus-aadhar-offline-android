@@ -245,7 +245,9 @@ Following error codes will be returned on the `onOctusOfflineFailure` method of 
 | 807  | Invalid Config         |
 | 808  | Transaction Failed       |
 | 809  | No Internet Available             |
-| 811  | Network Error |
+| 811  | Network Error 
+| 404  | UADAI Website server down |
+
 
 
 ## Help
