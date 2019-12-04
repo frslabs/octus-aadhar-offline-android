@@ -246,7 +246,7 @@ Following error codes will be returned on the `onOctusOfflineFailure` method of 
 | 808  | Transaction Failed       |
 | 809  | No Internet Available             |
 | 811  | Network Error 
-| 404  | UADAI Website server down |
+| 404  | UIDAI Website server down |
 
 
 
