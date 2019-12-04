@@ -114,6 +114,10 @@ Octus Aadhaar Offline SDK requires the following permission to operate properly
     <!-- Optional - Required if transaction based billing is enabled -->
     <uses-permission android:name="android.permission.INTERNET" />  
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Optional - Required if set node is 1(AADHAR OFFLINE REDIRECT) -->
+     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  
     
     <application>
       ...
@@ -160,6 +164,10 @@ public class MainActivity extends AppCompatActivity {
 
         OctusAadhaarOfflineConfig octusAadhaarOfflineConfig = new OctusAadhaarOfflineConfig.Builder()
                 .setLicenseKey(LICENCE_KEY_OCTUS_AADHAR_OFFLINE_SDK)
+                 /*  node value should be 0 or 1.
+                 0 is for Aadhaar Offline in app ,
+                 1 is for Aadhaar Offline redirect*/
+                .setNode(node)
                 .setApiCredentials(new OctusAadharOfflineApiCredentials(OCTUS_AADHAR_OFFLINE_API_BASE_URL
                         , OCTUS_AADHAR_OFFLINE_API_CRED1
                         , OCTUS_AADHAR_OFFLINE_API_CRED2))
