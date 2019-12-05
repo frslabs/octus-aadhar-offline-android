@@ -286,7 +286,7 @@ This part of the integration will allow the user to upload the file if already d
     <th bgcolor="#F1F1F1" colspan="2">Public Methods</th>
   </tr>
   <tr>
-    <td><b>setNode</b>(<em>0</em>)</td>
+    <td><b>setNode</b>(<em>1</em>)</td>
     <td>Sets the node value as 1 for the Redirect to UIDAI website SDK configuration..
     </br></br> Values should be <b> 1 </b> </td>
   </tr>
