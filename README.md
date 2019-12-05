@@ -10,7 +10,7 @@ There are two ways the SDK can be configured within your App. The first one is a
 The second option is to redirect the user to the UIDIAI website and allow the user to follow the instructions provided by the website. The user can enter the Aadhaar Number or VID, captcha, OTP and four digit share code in the website. Once the data is validated by UIDAI, a ZIP file (password protected using the share code) will be downloaded into the resident’s device. The user will now have to switch back to your App and select the file from the devices download folders which will parse the data and display them in the App (data shared with the App as JSON data). 
 
 
-In both cases, the Aadhaar Offline file will be validated for its digital signature and the KYC data of The Aadhaar holder will be passed to the integrating App as JSON data. As part of the Aadhaar Offline verification, the resident’s registered mobile can also be verified through the SDK.
+In both cases, the Aadhaar Offline file will be validated for its digital signature and the KYC data of The Aadhaar holder will be passed to the integrating App as JSON data.
 
 
 # Table Of Content
@@ -269,7 +269,7 @@ This part of the integration allows you to integrate the drop-in screens for the
   <tr>
     <td><b>setNode</b>(<em>0</em>)</td>
     <td>Sets the node value as 0 for the In-App SDK configuration.
-    </br></br> Values should be <b> 0 </b> </td>
+    </br></br> For in-app configuration, set the node value to <b> 0 </b> </td>
   </tr>
 </table>
 </div>
@@ -286,8 +286,8 @@ This part of the integration will allow the user to upload the file if already d
   </tr>
   <tr>
     <td><b>setNode</b>(<em>1</em>)</td>
-    <td>Sets the node value as 1 for the Redirect to UIDAI website SDK configuration..
-    </br></br> Values should be <b> 1 </b> </td>
+    <td>Sets the node value as 1 for the Redirect to UIDAI website SDK configuration.
+    </br></br> For redirect to UIDAI configuration, set the node value to <b> 1 </b> </td>
   </tr>
 </table>
 </div>
