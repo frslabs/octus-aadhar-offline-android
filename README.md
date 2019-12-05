@@ -1,5 +1,5 @@
 # Octus Aadhaar Offline SDK 
-![version](https://img.shields.io/badge/version-v0.1.0-blue)
+![version](https://img.shields.io/badge/version-v1.0.0-blue)
 
 Aadhaar Paperless Offline eKYC is a secure and shareable document which can be used by any Aadhaar holder for offline verification of identification. The Aadhaar Offline document can be obtained from the UIDAI website. This SDK provides a simple plugin to your mobile App which allows the user to seamlessly share their offline Aadhaar file with the service provider. 
 
@@ -28,13 +28,12 @@ In both cases, the Aadhaar Offline file will be validated for its digital signat
 
 ## Prerequisite
 
-***NOTE : Encryption of OCTUS AADHAR OFFLINE SDK Result is under development***
 
-You will need a valid license to use the Octus Aadhaar Offline SDK, which can be obtained by contacting `support@frslabs.com` . 
+You will need a valid license to use the Octus Aadhaar Offline SDK, which can be obtained by contacting `support@frslabs.com` 
 
 Depending on the license - offline or online - you have opted for, the ping functionality to billing servers will be disabled or enabled. For instance, if you have opted for the offline SDK model, then there will be no server ping needed to our billing server to bill you. However, if you have chosen a transaction based pricing, then after each transaction, a ping request will be made to our billing server. This cannot be overrided by the App. A point to note is that if the ping transaction fails for any reason, the whole transaction will be void without any results from the SDK.
 
-Once you have the license , follow the below instructions for a successful integration of Octus Aadhaar Offline SDK onto your Android Application.
+
 
 ## Android SDK Requirements
 
@@ -147,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
 
     // ...
 
-    /* Enter the Vidus license key here */
+    /* Enter the Octus Aadhaar Offline license key here */
     private String LICENCE_KEY_OCTUS_AADHAR_OFFLINE_SDK = "ENTER_YOUR_LICENSE_KEY_HERE";
     
     /* (OPTIONAL)  Enter the OctusAadharOffline api credentials here */
