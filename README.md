@@ -1,7 +1,11 @@
 # Octus Aadhaar Offline SDK 
 ![version](https://img.shields.io/badge/version-v0.1.0-blue)
 
-Aadhaar Paperless Offline e-KYC is a secure and shareable document which can be used by any Aadhaar holder for offline verification of identification. The pre-built screens as part of the SDK allows the Aadhaar holder to enter the Aadhaar Number or VID, Captcha, OTP and a four-digit share code. Once the data is validated by UIDAI, a ZIP file (password protected using the share code) will be downloaded into the resident’s device. This file is then parsed and the signature verified and provided to the App that is integrating the SDK as a JSON file. Optionally the resident’s registered mobile can also be verified in the Aadhaar Offline file.
+Aadhaar Paperless Offline eKYC is a secure and shareable document which can be used by any Aadhaar holder for offline verification of identification. The Aadhaar Offline document can be obtained from the UIDAI website. This SDK provides a simple plugin to your mobile App which allows the user to seamlessly share their offline Aadhaar file with the service provider. 
+There are two ways the SDK can be configured within your App. The first one is an in-app experience whereby the pre-built screens will allow the Aadhaar holder to enter the Aadhaar Number or VID, Captcha, OTP and four digit share code all within your App without redirecting to the UIDAI website. The Aadhaar Offline file once downloaded will be parsed in-memory and displayed in the App (data shared with the App as JSON data). The experience is seamless with the in-app option.
+The second option is to redirect the user to the UIDIAI website and allow the user to follow the instructions provided by the website. The user can enter the Aadhaar Number or VID, captcha, OTP and four digit share code in the website. Once the data is validated by UIDAI, a ZIP file (password protected using the share code) will be downloaded into the resident’s device. The user will now have to switch back to your App and select the file from the devices download folders which will parse the data and display them in the App (data shared with the App as JSON data). 
+In both cases, the Aadhaar Offline file will be validated for its digital signature and the KYC data of The Aadhaar holder will be passed to the integrating App as JSON data. As part of the Aadhaar Offline verification, the resident’s registered mobile can also be verified through the SDK.
+
 
 # Table Of Content
 
@@ -248,7 +252,39 @@ Following error codes will be returned on the `onOctusOfflineFailure` method of 
 | 811  | Network Error 
 | 404  | UIDAI Website server down |
 
+#### In-App SDK configuration. 
 
+This part of the integration allows you to integrate the drop-in screens for the in-app experience whereby the Aadhaar holder will enter the Aadhaar Number or VID, Captcha, OTP and four digit share code all within your App without redirecting to the UIDAI website. The Aadhaar Offline file once downloaded will be parsed in-memory and displayed in the App (data shared with the App as JSON data). The experience is seamless with the in-app option. However, one of the caveats to this configuration is that any change to the UIDIA website will need to be updated and is a reactive release and there is a risk of your App not working until the changes reflect in the SDK.
+
+<div>
+<table style="width:100%">
+  <tr>
+    <th bgcolor="#F1F1F1" colspan="2">Public Methods</th>
+  </tr>
+  <tr>
+    <td><b>setNode</b>(<em>0</em>)</td>
+    <td>Sets the node value as 0 for the In-App SDK configuration.
+    </br></br> Values should be <b> 0 </b> </td>
+  </tr>
+</table>
+</div>
+#### Redirect to UIDAI website SDK configuration. 
+
+This part of the integration will allow the user to upload the file if already downloaded and stored in the user’s device or redirect the user to the UIDIAI website and allow the user to follow the instructions to download the file. The user can enter the Aadhaar Number or VID, captcha, OTP and four digit share code in the website. Once the data is validated by UIDAI, a ZIP file (password protected using the share code) will be downloaded into the resident’s device. The user will now have to switch back to your App and select the file from the devices download folders which will parse the data and display them in the App (data shared with the App as JSON data). As this is the preferred way by UIDAI, the risk of failing even with the changes is negated to a large extent.
+
+
+<div>
+<table style="width:100%">
+  <tr>
+    <th bgcolor="#F1F1F1" colspan="2">Public Methods</th>
+  </tr>
+  <tr>
+    <td><b>setNode</b>(<em>0</em>)</td>
+    <td>Sets the node value as 1 for the Redirect to UIDAI website SDK configuration..
+    </br></br> Values should be <b> 1 </b> </td>
+  </tr>
+</table>
+</div>
 
 ## Help
 For any queries/feedback , contact us at `support@frslabs.com` 
