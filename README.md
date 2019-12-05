@@ -105,7 +105,7 @@ dependencies {
     
     // OPTIONAL - Required if transaction based billing is enabled
     // octus aadhar offline billing dependencies
-    implementation 'com.frslabs.android.sdk:torus:1.0.0'
+    implementation 'com.frslabs.android.sdk:torus:1.0.1'
     implementation 'com.google.code.gson:gson:2.8.5'
    
 }
@@ -293,4 +293,4 @@ This part of the integration will allow the user to upload the file if already d
 </div>
 
 ## Help
-For any queries/feedback , contact us at `support@frslabs.com` 
+For any queries/feedback, contact us at `support@frslabs.com` 
