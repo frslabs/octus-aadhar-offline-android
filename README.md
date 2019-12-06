@@ -268,7 +268,7 @@ This part of the integration allows you to integrate the drop-in screens for the
   </tr>
   <tr>
     <td><b>setNode</b>(<em>0</em>)</td>
-    <td>Sets the node value as 0 for the In-App SDK configuration.
+    <td>
     </br></br> For in-app configuration, set the node value to <b> 0 </b> </td>
   </tr>
 </table>
@@ -286,7 +286,7 @@ This part of the integration will allow the user to upload the file if already d
   </tr>
   <tr>
     <td><b>setNode</b>(<em>1</em>)</td>
-    <td>Sets the node value as 1 for the Redirect to UIDAI website SDK configuration.
+    <td>
     </br></br> For redirect to UIDAI configuration, set the node value to <b> 1 </b> </td>
   </tr>
 </table>
