@@ -151,8 +151,8 @@ public class MainActivity extends AppCompatActivity {
     
     /* (OPTIONAL)  Enter the OctusAadharOffline api credentials here */
     private String OCTUS_AADHAR_OFFLINE_API_BASE_URL = "ENTER_BASE_URL_HERE"
-            , OCTUS_AADHAR_OFFLINE_API_CRED1 = "ENTER_API_CRED1_HERE"
-            , OCTUS_AADHAR_OFFLINE_API_CRED2 = "ENTER_API_CRED2_HERE";
+            , OCTUS_AADHAR_OFFLINE_KEY_ID = "ENTER_API_KEY_ID_HERE"
+            , OCTUS_AADHAR_OFFLINE_KEY_SEC = "ENTER_API_KEY_SEC_HERE";
    
     
     @Override
@@ -178,8 +178,8 @@ public class MainActivity extends AppCompatActivity {
                  1 is for Aadhaar Offline redirect*/
                 .setNode(node)
                 .setApiCredentials(new OctusAadharOfflineApiCredentials(OCTUS_AADHAR_OFFLINE_API_BASE_URL
-                        , OCTUS_AADHAR_OFFLINE_API_CRED1
-                        , OCTUS_AADHAR_OFFLINE_API_CRED2))
+                        , OCTUS_AADHAR_OFFLINE_KEY_ID
+                        , OCTUS_AADHAR_OFFLINE_KEY_SEC))
                 .build();
 
         OctusAadhaarOffline octusAadharOffline = new OctusAadhaarOffline(octusAadhaarOfflineConfig);
