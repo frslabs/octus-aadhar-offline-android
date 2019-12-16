@@ -51,7 +51,7 @@ allprojects {
 
         maven { 
             // URL for Octus Aadhaar Offline SDK. 
-            url "https://octus-aadhar-offline-android.repo.frslabs.space/"                  
+            url "https://octus-android-aadhaar-offline.repo.frslabs.space/"                  
             credentials { 
                 username '<YOUR_USERNAME>' 
                 password '<YOUR_PASSOWRD>' 
