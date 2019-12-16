@@ -101,7 +101,7 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:<version above 1.1.3>'
    
     // octus aadhar offline Core Dependency
-    implementation 'com.frslabs.android.sdk.octusaadharoffline':1.0.0'
+    implementation 'com.frslabs.android.sdk.aadhaaroffline':1.0.0'
     
     // OPTIONAL - Required if transaction based billing is enabled
     // octus aadhar offline billing dependencies
