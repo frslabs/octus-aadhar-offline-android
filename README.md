@@ -104,6 +104,9 @@ dependencies {
     implementation 'com.frslabs.android.sdk.octus:aadhaaroffline:1.0.0'
     
     // OPTIONAL - Required if transaction based billing is enabled
+    //Zip
+    implementation 'net.lingala.zip4j:zip4j:1.3.2'
+    
     // octus aadhar offline billing dependencies
     implementation 'com.frslabs.android.sdk:torus:0.1.1'
     implementation 'com.google.code.gson:gson:2.8.5'
