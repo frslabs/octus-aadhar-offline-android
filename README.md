@@ -12,6 +12,7 @@ The second option is to redirect the user to the UIDIAI website and allow the us
 
 In both cases, the Aadhaar Offline file will be validated for its digital signature and the KYC data of The Aadhaar holder will be passed to the integrating App as JSON data.
 
+You can find the release history at [Changelog](CHANGELOG.md)
 
 # Table Of Content
 
