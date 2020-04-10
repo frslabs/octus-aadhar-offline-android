@@ -1,5 +1,10 @@
 # Changelog
 
+
+## **v1.0.7** - *10-04-2020*
+### Added
+- Dynamically changing the button and text color added.
+
 ## **v1.0.2** - *20-12-2019*
 ### Added
 - Octus Aadhar Offline Redirect .
