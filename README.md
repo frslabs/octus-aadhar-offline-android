@@ -102,14 +102,14 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:<version above 1.1.3>'
    
     // octus aadhar offline Core Dependency
-    implementation 'com.frslabs.android.sdk.octus:aadhaaroffline:1.0.2'
+    implementation 'com.frslabs.android.sdk.octus:aadhaaroffline:1.0.7'
     
     // OPTIONAL - Required if transaction based billing is enabled
     //Zip
     implementation 'net.lingala.zip4j:zip4j:1.3.2'
     
     // octus aadhar offline billing dependencies
-    implementation 'com.frslabs.android.sdk:torus:0.1.1'
+    implementation 'com.frslabs.android.sdk:torus:0.1.2'
     implementation 'com.google.code.gson:gson:2.8.5'
    
 }
@@ -181,6 +181,9 @@ public class MainActivity extends AppCompatActivity {
                  0 is for Aadhaar Offline in app ,
                  1 is for Aadhaar Offline redirect*/
                 .setNode(node)
+                /* If the user need to change button background color and text color need to add below lines  */
+                .setButtonColorCode("#000000")
+                .setTextColorCode("#FFFFFF")
                 .setApiCredentials(new OctusAadharOfflineApiCredentials(OCTUS_AADHAR_OFFLINE_API_BASE_URL
                         , OCTUS_AADHAR_OFFLINE_KEY_ID
                         , OCTUS_AADHAR_OFFLINE_KEY_SEC))
