@@ -1,6 +1,11 @@
 # Changelog
 
 
+## **v2.0.0** - *27-08-2020*
+
+### Added
+- Code Migrated to AndroidX
+
 ## **v1.0.7** - *10-04-2020*
 ### Added
 - Dynamically changing the button and text color added.
