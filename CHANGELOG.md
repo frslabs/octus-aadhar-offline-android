@@ -5,6 +5,7 @@
 
 ### Added
 - Code Migrated to AndroidX
+- Torus v1.0.0 integrated 
 
 ## **v1.0.7** - *10-04-2020*
 ### Added
