@@ -97,9 +97,17 @@ And then, add the dependencies
 // ...
 
 dependencies {
+
     /* Dependencies for Octus Aadhaar Offline SDK */ 
-    implementation 'com.android.support:design:<version above 23.4.0>'      
-    implementation 'com.android.support.constraint:constraint-layout:<version above 1.1.3>'
+    implementation 'androidx.legacy:legacy-support-v4:<lastest verison>'
+    
+    implementation 'androidx.appcompat:appcompat:<lastest verison>'
+    
+    implementation 'com.google.android.material:material:<lastest verison>'
+
+    // octus aadhar offline billing dependencies
+    implementation('com.frslabs.android.sdk:torus:1.0.0')
+    implementation 'com.google.code.gson:gson:2.8.6'
    
     // octus aadhar offline Core Dependency
     implementation 'com.frslabs.android.sdk.octus:aadhaaroffline:2.0.0'
@@ -107,10 +115,6 @@ dependencies {
     // OPTIONAL - Required if transaction based billing is enabled
     //Zip
     implementation 'net.lingala.zip4j:zip4j:1.3.2'
-    
-    // octus aadhar offline billing dependencies
-    implementation 'com.frslabs.android.sdk:torus:1.0.0'
-    implementation 'com.google.code.gson:gson:2.8.5'
    
 }
 ```
