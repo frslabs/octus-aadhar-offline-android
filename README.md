@@ -267,7 +267,10 @@ Following error codes will be returned on the `onOctusOfflineFailure` method of 
 | 809  | No Internet Available             |
 | 811  | Network Error 
 | 404  | UIDAI Website server down |
-| 812  | Interupted            |
+| 812  | User Interupted            |
+| 813  | File Upload Failed            |
+| 814  | Otp Limit Exceeded            |
+
 
 
 #### In-App SDK configuration. 
